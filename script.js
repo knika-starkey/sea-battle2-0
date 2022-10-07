@@ -17,7 +17,11 @@ let ishit = false;
 let isSunk = false;
 let shots = [];
 label: while (!isSunk) {
-  guess = prompt(`Ваш постріл! (введіть число від 0 до ${randomLength - 1}):`);
+  guess = prompt(
+    `Ваш постріл! (введіть число від 0 до ${
+      randomLength - 1
+    } або ! для кінця гри) :`
+  );
   if (isNaN(guess)) {
     break;
   }
